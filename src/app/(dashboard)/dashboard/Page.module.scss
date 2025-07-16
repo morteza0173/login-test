@@ -1,0 +1,56 @@
+.container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  .details {
+    flex: 1;
+    text-align: right;
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      strong {
+        color: #333;
+      }
+    }
+  }
+
+  .image {
+    margin-right: 1rem;
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #0070f3;
+    }
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.logoutBtn {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #005bb5;
+  }
+}
